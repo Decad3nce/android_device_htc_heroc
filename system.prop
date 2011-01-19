@@ -27,4 +27,4 @@ settings.display.autobacklight=1
 settings.display.brightness=143
 
 # Disable JIT by default
-dalvik.vm.execution-mode=int:fast
+dalvik.vm.execution-mode=int:jit
