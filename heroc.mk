@@ -92,8 +92,6 @@ endif
 PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel
 
-KERNEL_NAME := 2.6.29.6-Decafuct
-
 $(call inherit-product-if-exists, vendor/htc/heroc/heroc-vendor.mk)
 
 # stuff common to all HTC phones
