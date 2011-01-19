@@ -1,0 +1,8 @@
+ro.product.model=HTC HeroC
+ro.product.brand=htc
+ro.product.name=heroc
+ro.product.device=heroc
+ro.product.board=heroc
+# ro.build.product is obsolete; use ro.product.device
+ro.build.product=heroc
+
