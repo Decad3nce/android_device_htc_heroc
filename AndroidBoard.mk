@@ -23,6 +23,13 @@ LOCAL_PATH := $(call my-dir)
 # Least specific includes go first, so that they can get
 # overridden further down
 include $(CLEAR_VARS)
+LOCAL_MODULE_TAGS := optional
+
+# the system properties for each device, loaded by init
+file := $(TARGET_OUT)/build.heroc.prop
+ALL_PREBUILT += $(file)
+$(file) : $(LOCAL_PATH)/build.heroc.prop | $(ACP)
+	$(transform-prebuilt-to-target)
 
 # include the non-open-source counterpart to this file
 -include vendor/htc/heroc/AndroidBoardVendor.mk
